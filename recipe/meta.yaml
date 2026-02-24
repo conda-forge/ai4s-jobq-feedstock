@@ -1,5 +1,5 @@
 {% set name = "ai4s-jobq" %}
-{% set version = "2.17.0" %}
+{% set version = "3.0.0" %}
 {% set suffix = ".post2" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 0142573aacb4acf3ea2cdc06c8eae1c72f3ff8b2043881134acddd83c23a770e
+  sha256: cb8d0d92b7d5ab2e72fb153d1939885d6e37d5918af31015a45d82c3435a9d85
 
 build:
   entry_points:
@@ -25,6 +25,7 @@ requirements:
     - setuptools-scm >=8
     - wheel >=0.29.0
   run:
+    - humanize
     - tenacity
     - aiohttp
     - anyio
