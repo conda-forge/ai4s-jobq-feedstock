@@ -1,5 +1,5 @@
 {% set name = "ai4s-jobq" %}
-{% set version = "3.5.0" %}
+{% set version = "3.6.0" %}
 {% set suffix = ".post2" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: f21c616710b958e647a16c3959718171e87090889751b744f0c967984fd067e2
+  sha256: ac1a79bee90c256f0f21de42e2915d4b76992e78c386aef1538e51c68b1621f2
 
 build:
   entry_points:
@@ -32,7 +32,7 @@ requirements:
     - appdirs
     - asyncclick <8.2.2
     - azure-identity
-    - azure-monitor-opentelemetry
+    - azure-monitor-opentelemetry >=1.8.7
     - azure-servicebus
     - azure-storage-blob
     - azure-storage-queue
