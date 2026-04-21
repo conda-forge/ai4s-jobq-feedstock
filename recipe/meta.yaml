@@ -1,5 +1,5 @@
 {% set name = "ai4s-jobq" %}
-{% set version = "3.7.0" %}
+{% set version = "3.8.0" %}
 {% set suffix = ".post2" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: ea337e44bd16fc2ab3112d1dd3672f6520ed3a3f8fa06714f227e1bcde71a258
+  sha256: 0969c87af412d16144cb4127a92ea78525d4dc602d31bc669e513118cf617d99
 
 build:
   entry_points:
